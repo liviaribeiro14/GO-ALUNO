@@ -52,7 +52,14 @@ Código responsável para gerar as stubs (ainda vou descobrir o que é)
 protoc --proto_path=proto/ proto/*.proto --plugin=$(go env GOPATH)/bin/protoc-gen-go-grpc --go-grpc_out=. --go_out=.
 ```
 
-Para rodar o serviço:
+Para rodar o server:
 ``` bash
 go run cmd/server/server.go
 ```
+
+Para rodar o client:
+``` bash
+go run cmd/client/client.go
+```
+
+SPOILER, GALERA: Não funfou!
